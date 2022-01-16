@@ -13,14 +13,14 @@ async function checkValid() {
             )
         )
     }
-    if (!config.BOT_TOKEN) {
+    /*if (!config.BOT_TOKEN) {
         throw ReferenceError(
             chalk.bgRedBright.black(
                 "[CONFIG_ERR] BOT_TOKEN_WAS_NOT_FOUND"
             )
         )
     }
-    if (!config.mongoPass) {
+    */if (!config.mongoPass) {
         throw ReferenceError(
             chalk.bgRedBright.black(
                 "[CONFIG_ERR] MONGO_DB_CONNECTION_URL_WAS_NOT_FOUND"

@@ -1,11 +1,11 @@
 {
 
-    "OWNER_ID":"",
+    "OWNER_ID":"618463472165978132",
     "BOT_TOKEN": "",
     "tenorAPI":"ZEEELJXAFQBN",
     "DEFAULT_PREFIX":"!",
-    "mongoPass": "",
-    "ERROR_LOGS_CHANNEL": "",
+    "mongoPass": "mongodb+srv://starlightz:starlightz1234@cluster0.bg4za.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "ERROR_LOGS_CHANNEL": "930451804343398421",
     "ALEXFLIPNOTE_API_KEY":"",
     "YT_COOKIE": ""
     
