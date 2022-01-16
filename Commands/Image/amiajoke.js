@@ -4,7 +4,7 @@ module.exports = {
   name: "amiajoke",
   description: "Another fun command",
   botPerms: ["EMBED_LINKS"],
-  enabled: false,
+  enabled: true,
   run: async (client, message, args) => {
     let avatar = message.mentions.users.size
       ? message.mentions.users
