@@ -10,7 +10,7 @@ module.exports = {
       .setColor("CYAN")
       .setImage("https://media.discordapp.net/attachments/792691782399557634/932351782645039104/IMG_20220117_004225.jpg")
       .setDescription("You can send s!help [command name] to get info on a specific command!")
-      .addField("", "")
+      .addField("<a:li:932354429527687188> Important Links:", "`annie`, `panda`, `facebook`, `instagram`")
       .addField("<a:se:932331677747937282> Settings Commands:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
       .addField("<a:fu:932335906583613531> Fun Commands:", "`8ball`, `ascii`, `cowsay`, `clyde`, `emojify`, `fliptext`, `greentext`, `orangetext`, `hack`, `hug`, `joke`, `kill`, `kiss`, `slap`, `pokeimg`, `respect`, `reverse`, `roast`, `meme`, `nitro`, `vaportext`, `urban`")
       .addField("<a:im:932339584640110633> Image Commands:", "`amazeme`, `changemymind`, `clyde`, `creatememe`, `memetemplates`, `trigger`, `trumptweet`, `wasted`, `wideavatar`")
