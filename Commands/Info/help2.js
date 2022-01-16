@@ -8,9 +8,9 @@ module.exports = {
     let embed = new Discord.MessageEmbed()
       .setTitle("Invite Me")
       .setColor("RANDOM")
-      .setDescription(
-        "**Get Infinity's Invite Link [Here](https://discord.com/oauth2/authorize?client_id=733670294086221865&permissions=1584921983&scope=bot)**\n**Need assistance? Join our [Support Server](https://discord.gg/mqWprFc) now!**"
-      )
+      .setDescription("hi")
+      .addField("<a:se:932331677747937282> Settings:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
+      .addField("", "")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({ embeds: [embed] });
   },
