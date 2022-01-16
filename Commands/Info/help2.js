@@ -10,6 +10,7 @@ module.exports = {
       .setColor("RANDOM")
       .setDescription("hi")
       .addField("<a:se:932331677747937282> Settings Commands:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
+      .addField("<a:fu:932335906583613531> Fun Commands:", "`8ball`, `ascii`, `cowsay`, `clyde`, `emojify`, `fliptext`, `greentext`, `orangetext`, `hack`, `hug`, `joke`, `kill`, `kiss`, `slap`, `pokeimg`, `respect`, `reverse`, `roast`, `meme`, `nitro`, `vaportext`, `urban`")
       .addField("<:ac:932333902754906183> Activities Commands:", "`awkword`, `betrayal`, `chess`, `doodlecrew`, `fishington`, `lettertile`, `poker`, `spellcast`, `youtube`")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({ embeds: [embed] });
