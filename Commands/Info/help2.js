@@ -9,8 +9,8 @@ module.exports = {
       .setTitle("Invite Me")
       .setColor("RANDOM")
       .setDescription("hi")
-      .addField("<a:se:932331677747937282> Settings:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
-      .addField("", "")
+      .addField("<a:se:932331677747937282> Settings Commands:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
+      .addField("<:ac:932333902754906183> Activities Commands:", "`awkword`, `betrayal`, `chess`, `doodlecrew`, `fishington`, `lettertile`, `poker`, `spellcast`, `youtube`")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({ embeds: [embed] });
   },
