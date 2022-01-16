@@ -8,7 +8,8 @@ module.exports = {
     let embed = new Discord.MessageEmbed()
       .setTitle("AnnieIzLive's Youtube:")
       .setColor("GREEN")
-      .setDescription("")
+      .setDescription("<a:yt:932357661914198136> Youtube ➜ [AnnieIzLive Youtube Channel](https://youtube.com/channel/UCDh_z_n5_2jiQDVU7BTa-1A)")
+      .setImage("")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({ embeds: [embed] });
   },
