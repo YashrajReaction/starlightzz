@@ -8,7 +8,7 @@ module.exports = {
     let embed = new Discord.MessageEmbed()
       .setTitle("StarLightz ☄ Commands Menu:")
       .setColor("CYAN")
-      .setImage("https://media.discordapp.net/attachments/792691782399557634/932523397391466526/New_Project_18_3B2610E.gif")
+      .setImage("http://imgur.com/a/F8I7AOL")
       .setDescription("You can send s!help [command name] to get info on a specific command!")
       .addField("<a:li:932354429527687188> Important Links:", "`annie`, `panda`, `facebook`, `instagram`")
       .addField("<a:se:932331677747937282> Settings Commands:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
