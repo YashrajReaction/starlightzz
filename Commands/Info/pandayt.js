@@ -17,7 +17,7 @@ module.exports = {
       .setTitle("PandaIzLive's Youtube:")
       .setColor("GREEN")
       .setDescription("<a:yt:932357661914198136> Youtube ➜ [PandaIzLive Youtube Channel](https://youtube.com/channel/UCguQBC6d05oi_AfTYwZup7Q)")
-      .setImage("https://media.discordapp.net/attachments/792691782399557634/932519645662019635/New_Project_17_ED5503E.gif")
+      .setImage("https://media.discordapp.net/attachments/780854968823054348/932527829055324190/ezgif.com-gif-maker_3.gif")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({embeds: [mainPage], components: [row]})
   },
