@@ -2,6 +2,7 @@ const antilinkData = require("../../database/guildData/antilink");
 const ms = require('ms')
 
 module.exports = async (message) => {
+  if(message.author.bot) return;
   if(!message.member.permissions.has("ADMINISTRATOR")){
      
   const antilink = await antilinkData.findOne({
