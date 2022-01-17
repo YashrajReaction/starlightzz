@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 
 module.exports = {
-  name: "help2",
+  name: "help",
+  aliases: ["cmd", "commands", "helpmenu"],
   description: "Get the help commands of the bot's",
   botPerms: ["EMBED_LINKS"],
   run: async (client, message, args) => {
