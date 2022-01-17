@@ -17,7 +17,7 @@ module.exports = {
       .setTitle("Starlightz's Facebook Page:")
       .setColor("GREEN")
       .setDescription("<:facebook:932521183247761429> Facebook ➜ [Starlightz Facebook Page](https://www.facebook.com/Starlightz-107905138244863/)")
-      .setImage("http://imgur.com/a/F8I7AOL")
+      .setImage("https://i.imgur.com/RX8b8MX.gif")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({embeds: [mainPage], components: [row]})
   },
