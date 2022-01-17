@@ -8,7 +8,7 @@ module.exports = {
     const row = new MessageActionRow()
 			.addComponents(
         new MessageButton()
-    .setLabel("<a:yt:932357661914198136> PandaIzLive")
+    .setLabel("🔗 PandaIzLive")
     .setStyle("LINK")
     .setURL(`https://youtube.com/channel/UCguQBC6d05oi_AfTYwZup7Q`))
     

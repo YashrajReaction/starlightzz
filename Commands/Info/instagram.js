@@ -8,7 +8,7 @@ module.exports = {
     const row = new MessageActionRow()
 			.addComponents(
         new MessageButton()
-    .setLabel("<a:instagram:932524386991349760> Starlightz")
+    .setLabel("🔗 Starlightz")
     .setStyle("LINK")
     .setURL(`https://instagram.com/starlightz_officialzz?utm_medium=copy_link`))
     

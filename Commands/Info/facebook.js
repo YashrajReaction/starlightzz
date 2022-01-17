@@ -8,7 +8,7 @@ module.exports = {
     const row = new MessageActionRow()
 			.addComponents(
         new MessageButton()
-    .setLabel("<:facebook:932521183247761429> Starlightz")
+    .setLabel("🔗 Starlightz")
     .setStyle("LINK")
     .setURL(`https://www.facebook.com/Starlightz-107905138244863/`))
     
