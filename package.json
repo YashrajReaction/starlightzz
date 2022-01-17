@@ -79,9 +79,6 @@
     "ytdl-core": "^4.9.1",
     "ytdl-core-discord": "^1.2.4"
   },
-  "devDependencies": {
-    "node": "16.13.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Simpleboy353/REAPER-2.0.git"
