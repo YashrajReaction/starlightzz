@@ -8,7 +8,7 @@ module.exports = {
     const row = new MessageActionRow()
 			.addComponents(
         new MessageButton()
-    .setLabel("<a:yt:932357661914198136> AnnieIzLive")
+    .setLabel("🔗 AnnieIzLive")
     .setStyle("LINK")
     .setURL(`https://youtube.com/channel/UCDh_z_n5_2jiQDVU7BTa-1A`))
     
