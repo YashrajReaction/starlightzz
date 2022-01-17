@@ -17,7 +17,7 @@ module.exports = {
       .setTitle("Starlightz's Facebook Page:")
       .setColor("GREEN")
       .setDescription("<:facebook:932521183247761429> Facebook ➜ [Starlightz Facebook Page](https://www.facebook.com/Starlightz-107905138244863/)")
-      .setImage("https://media.discordapp.net/attachments/792691782399557634/932523397391466526/New_Project_18_3B2610E.gif")
+      .setImage("http://imgur.com/a/F8I7AOL")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({embeds: [mainPage], components: [row]})
   },
