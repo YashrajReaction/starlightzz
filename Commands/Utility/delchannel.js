@@ -8,7 +8,7 @@ module.exports = {
   run: async (client, message, args) => {
     const fetchedChannel = message.mentions.channels.first();
     if (!fetchedChannel) {
-      return message.channel.send("`Usage: =delchannel <channel>`");
+      return message.channel.send("`Usage: !delchannel <channel>`");
     }
     fetchedChannel.delete();
 

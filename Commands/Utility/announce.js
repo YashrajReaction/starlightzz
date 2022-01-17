@@ -8,7 +8,7 @@ module.exports = {
   run: async (client, message, args) => {
     const anchannel = message.mentions.channels.first();
     if (!anchannel) {
-      return message.channel.send("`Usage: =announce <channel> <msg>`");
+      return message.channel.send("`Usage: !announce <channel> <msg>`");
     }
     if (!args.slice(1).join(" ")) {
       return message.channel.send(
@@ -17,7 +17,7 @@ module.exports = {
     }
 
     let embed = new Discord.MessageEmbed()
-      .setTitle(`<:ann:748176925792665721> New Server Announcement`)
+      .setTitle(`📢 New Server Announcement`)
       .setDescription(args.slice(1).join(" "), {
         allowedMentions: { parse: ["users"] },
       })

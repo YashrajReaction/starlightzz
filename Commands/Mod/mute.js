@@ -39,11 +39,7 @@ module.exports = {
                         ADD_REACTIONS: false
                     })
                 });
-                message.channel.send(
-                    new MessageEmbed()
-                    .setDescription('Muted role has sucessfully been created')
-                    .setColor("GREEN")
-                )
+                message.channel.send("Muted role has sucessfully Created!")
             } catch (error) {
                 console.log(error)
             }

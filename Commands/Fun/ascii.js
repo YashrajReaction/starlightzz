@@ -9,7 +9,7 @@ module.exports = {
   run: async (client, message, args) => {
     let text = args.join(" ");
     if (!text) {
-      return message.channel.send(`\`Usage: =ascii <msg>\``);
+      return message.channel.send(`\`Usage: !ascii <msg>\``);
     }
     let maxlen = 20;
     if (text.length > 20) {

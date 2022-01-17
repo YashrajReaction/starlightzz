@@ -1,6 +1,7 @@
 module.exports = {
   name: "clear",
   description: "delete the given number of messages",
+  aliases: ["purge"],
   userPerms: ["MANAGE_MESSAGES"],
   botPerms: ["MANAGE_MESSAGES"],
   run: async (client, message, args) => {
@@ -11,11 +12,11 @@ module.exports = {
 
     if (isNaN(amount)) {
       return message.channel.send(
-        `${message.author.username}, you can only clear messages from 1-99`
+        `${message.author.username}, you can only clear messages from 1-999`
       );
-    } else if (amount <= 1 || amount > 100) {
+    } else if (amount <= 1 || amount > 1000) {
       return message.channel.send(
-        `${message.author.username}, you can only clear messages from 1-99`
+        `${message.author.username}, you can only clear messages from 1-999`
       );
     }
 

@@ -30,7 +30,7 @@ module.exports = {
     });
   },
   catch(error) {
-    const errorlogs = client.channels.cache.get("747750993583669258");
+    const errorlogs = client.channels.cache.get("930451804343398421");
     message.channel.send(
       "Seems like an error has occured!. Please try again in a few hours!"
     );

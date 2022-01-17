@@ -9,7 +9,7 @@ module.exports = {
     const role = message.mentions.roles.first();
    
     if (!role) {
-      return message.channel.send("`Usage: =delrole <role>`");
+      return message.channel.send("`Usage: !delrole <role>`");
     }
     role.delete();
     const embed = new Discord.MessageEmbed()

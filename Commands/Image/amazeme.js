@@ -19,7 +19,7 @@ module.exports = {
         let wow = new discord.MessageEmbed()
           .setDescription(`**` + title + `**`)
           .setImage(amazeme)
-          .setFooter(`Credits to r/interestingasfuck`)
+          .setFooter(`Amazing :D`)
           .setColor("RANDOM");
         message.channel.send({ embeds: [wow] });
       })
