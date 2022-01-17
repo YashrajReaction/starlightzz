@@ -12,7 +12,7 @@ let textList = [' About handling command',' in: ' + guildin + ' Server.' + 'Serv
  client.user.setPresence({ status: "online" });
  setInterval(() => {
    var text = textList[Math.floor(Math.random() * textList.length)];
-  client.user.setActivity(text, { type: "WATCHING"});
+  client.user.setActivity("Starlightz Official", { type: "WATCHING"});
 }, 3000);
 
   let allMembers = new Set();

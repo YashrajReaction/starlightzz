@@ -17,7 +17,7 @@ module.exports = {
       .setTitle("Starlightz's Instagram:")
       .setColor("GREEN")
       .setDescription("<a:instagram:932524386991349760> Instagram ➜ [Starlightz Instagram](https://instagram.com/starlightz_officialzz?utm_medium=copy_link)")
-      .setImage("https://i.imgur.com/RX8b8MX.gif")
+      .setImage("https://i.imgur.com/x5qID97.gif")
       .setFooter(`Requested By: ${message.author.username}`);
     message.channel.send({embeds: [mainPage], components: [row]})
   },

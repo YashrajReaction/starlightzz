@@ -3,7 +3,7 @@ const discord = module.require("discord.js");
 module.exports = {
   name: "ban",
   category: "moderation",
-  description: "Ban anyone with one shot whithout knowing anyone xD",
+  description: "Ban someone from the server!",
   usage: "ban <@user> <reason>",
   userPerms: ["BAN_MEMBERS"],
   botPerms: ["EMBED_LINKS", "BAN_MEMBERS"],
@@ -11,7 +11,7 @@ module.exports = {
     let reason = args.slice(1).join(" ");
     if (!reason) reason = "Unspecified";
 
-    const target = message.mentions.members.first() || message.guild.users.cache.get(args[0]);
+    const target = message.mentions.members.first()
 
     if (!target) {
       return message.channel.send(

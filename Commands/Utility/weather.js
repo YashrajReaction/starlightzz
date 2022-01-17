@@ -17,7 +17,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
       .setTitle(`${name}'s Weather for Next 3 days`)
       .setImage(link)
-      .setFooter("Credits to Wttr.in")
+      .setFooter("Weather information")
       .setColor("RANDOM");
     message.channel.send({ embeds: [embed] });
   },

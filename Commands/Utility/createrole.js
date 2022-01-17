@@ -11,7 +11,7 @@ module.exports = {
     const regex = !/[^a-zA-Z0-9]+/g.test(name);
 
     if (!args[0]) {
-      return message.channel.send("`Usage: =createrole <colorname> <Name>`");
+      return message.channel.send("`Usage: !createrole <colorname> <Name>`");
     }
     if (!name) {
       return message.channel.send("You need to specify a name for your Role");

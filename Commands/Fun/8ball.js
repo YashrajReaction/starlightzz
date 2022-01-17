@@ -6,7 +6,7 @@ module.exports = {
   run: async (client, message, args) => {
     if (args.length == 0)
       return message.channel
-        .send("`Usage: =8ball <msg>`")
+        .send("`Usage: !8ball <ask a question>`")
         .then((msg) =>setTimeout(() => msg.delete(), 2300));
 
     var fortunes = [

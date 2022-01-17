@@ -5,7 +5,7 @@ module.exports = {
   description: "Report a bug",
   botPerms: ["EMBED_LINKS"],
   run: async (client, message, args) => {
-    const reportchannel = client.channels.cache.get("747699213814464522");
+    const reportchannel = client.channels.cache.get("865164555910119424");
     const report = args.join(" ");
     if (!report) {
       return message.channel.send(
@@ -24,7 +24,7 @@ module.exports = {
     reportchannel.send({embeds: [embed]});
   },
   catch(error) {
-    const errorlogs = client.channels.cache.get("747750993583669258");
+    const errorlogs = client.channels.cache.get("865164555910119424");
     message.channel.send(
       "Looks Like an Error has Ocurred. The Error has been reported to the Report Section!"
     );

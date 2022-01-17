@@ -31,8 +31,8 @@ module.exports = {
     suggestionchannel
       .send({ embeds: [embed] })
       .then(function (message, str) {
-        message.react(":yes:747387883123376181");
-        message.react(":no:747388029202595881");
+        message.react("✅");
+        message.react("❌");
       })
       .catch(function () {});
   },

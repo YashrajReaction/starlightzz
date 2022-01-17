@@ -19,7 +19,7 @@ module.exports = {
       .setDescription('your msg')
       .setTitle("**Syntax Helper - Command**")
       .setColor("#FBD570")
-      .setFooter('your footer msg')
+      .setFooter('Starlightz')
       return message.channel.send({ embeds: [Embed89] })}
 
       
@@ -43,7 +43,7 @@ module.exports = {
         .setDescription("Please enter a **Message**.")
         .setTitle("**Error - Impossible Action**")
         .setColor("#FBD570")
-        .setFooter('your footer msg')
+        .setFooter('Starlightz')
         return message.channel.send({ embeds: [Embed172] })}
 
        
