@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports = {
-  name: "youtube",
+  name: "youtube2",
   description: "Get information about AnnieIzLive youtube channel",
   botPerms: ["EMBED_LINKS"],
   run: async (client, message, args) => {
