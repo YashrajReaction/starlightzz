@@ -1,5 +1,5 @@
 const fs = require("fs");
-const chalk = require("chalk");
+//const chalk = require("chalk");
 
 const { Client, Collection, Intents, MessageEmbed } = require("discord.js");
 const { DEFAULT_PREFIX, BOT_TOKEN, ERROR_LOGS_CHANNEL, ALEXFLIPNOTE_API_KEY, YT_COOKIE } = require("./config.json");
@@ -97,9 +97,5 @@ process.on("unhandledRejection", (reason, promise) => {
 });
 
 client.login(process.env.BOT_TOKEN).then(() => {
-  console.log(
-    chalk.bgBlueBright.black(
-      ` Successfully logged in as: ${client.user.username}#${client.user.discriminator} `
-    )
-  );
+  console.log(` Successfully logged in as: ${client.user.username}#${client.user.discriminator} `);
 });

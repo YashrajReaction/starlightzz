@@ -2,6 +2,7 @@ const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
   name: "facebook",
+  aliases: ["fb"],
   description: "Get information about AnnieIzLive youtube channel",
   botPerms: ["EMBED_LINKS"],
   run: async (client, message, args) => {
