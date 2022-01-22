@@ -19,7 +19,7 @@ module.exports = {
     
         let timeEmbed = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
-        .setDescription(`${crossemoji} You have already worked recently\n\nTry again in ${time.minutes}m ${time.seconds}s `);
+        .setDescription(`${crossemoji} You have already worked recently\nTry again in ${time.minutes}m ${time.seconds}s `);
         message.channel.send({embeds: [timeEmbed]})
       } else {
 

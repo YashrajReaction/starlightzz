@@ -6,7 +6,7 @@ module.exports = {
   botPerms: ["EMBED_LINKS"],
   run: async (client, message, args) => {
     const avatar = message.author.avatarURL;
-    const suggestchannel = client.channels.cache.get("865164555910119424");
+    const suggestchannel = client.channels.cache.get("933772341593374790");
     const suggestion = args.join(" ");
     if (!suggestion) {
       return message.channel.send("Please Suggest Something");
