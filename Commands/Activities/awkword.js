@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
     name: "awkword",
@@ -15,8 +15,13 @@ module.exports = {
             .setDescription(`[Click Here](${invite.code}) to play Awkword.io!\n\`\`\`\nNote: This feature is not availble for mobile users!\`\`\``)
             .setColor("GREEN")
             .setFooter(`Requested By: ${message.author.tag}`)
-            
-            return message.channel.send({ embeds: [embed] });
+            const row = new MessageActionRow()
+			.addComponents(
+        new MessageButton()
+    .setLabel("Awkword")
+    .setStyle("LINK")
+    .setURL(`${invite.code}`))
+            return message.channel.send({ embeds: [embed], components: [row] });
         });
     }
 }

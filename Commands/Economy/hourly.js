@@ -12,7 +12,7 @@ module.exports = {
     let user = message.author;
 
   let timeout = 3600000;
-  let amount = Math.floor(Math.random() * 500) + 100;
+  let amount = Math.floor(Math.random() * 150)
 
   let hourly = await db.fetch(`hourly_${message.guild.id}_${user.id}`);
 
@@ -26,6 +26,8 @@ module.exports = {
   } else {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("#FFFFFF")
+    .setAuthor(`${user.username}'s Hourly`, `${user.displayAvatarURL()}`)
+.setTimestamp()
   .setDescription(`${sucessemoji} You've collected your hourly reward of ${amount} Cash`);
   message.channel.send({embeds: [moneyEmbed]})
   db.add(`money_${message.guild.id}_${user.id}`, amount)

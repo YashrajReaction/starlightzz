@@ -12,7 +12,7 @@ module.exports = {
     let user = message.author;
 
   let timeout = 86400000;
-  let amount = Math.floor(Math.random() * 900) + 100;
+  let amount = Math.floor(Math.random() * 500)
 
   let daily = await db.fetch(`daily_${message.guild.id}_${user.id}`);
 
@@ -21,11 +21,13 @@ module.exports = {
   
     let timeEmbed = new Discord.MessageEmbed()
     .setColor("#FFFFFF")
-    .setDescription(`${timeemoji} You've already collected your daily reward\n\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
+    .setDescription(`${timeemoji} You've already collected your daily reward\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
     message.channel.send({embeds: [timeEmbed]})
   } else {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("#FFFFFF")
+    .setAuthor(`${user.username}'s Daily`, `${user.displayAvatarURL()}`)
+.setTimestamp()
   .setDescription(`${sucessemoji} You've collected your daily reward of ${amount} Cash`);
   message.channel.send({embeds: [moneyEmbed]})
   db.add(`money_${message.guild.id}_${user.id}`, amount)

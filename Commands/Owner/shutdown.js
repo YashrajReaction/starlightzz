@@ -1,6 +1,7 @@
 const OWNER_ID = require("../../config.json").OWNER_ID;
 module.exports = {
   name: "shutdown",
+  owner: true,
   description: "Shut's down the bot",
   run: async (client, message, args) => {
     if (!OWNER_ID)

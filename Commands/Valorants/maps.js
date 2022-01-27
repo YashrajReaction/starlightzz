@@ -3,6 +3,7 @@ const { pagination } = require("reconlx")
 
 module.exports = {
     name: "maps",
+    aliases: ["map", "valorantmap"],
     description: "Get some information about Valorant",
     run: async(client, message, args) => {
 

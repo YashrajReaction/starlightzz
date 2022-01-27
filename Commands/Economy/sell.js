@@ -14,7 +14,7 @@ module.exports = {
         let Embed2 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${crossemoji} You don't have Nikes to sell`);
-
+        let amount = Math.floor(Math.random() * 1500)
         let nikeses = await db.fetch(`nikes_${message.guild.id}_${user.id}`)
 
         if (nikeses < 1) return message.channel.send({embeds: [Embed2]})
@@ -24,9 +24,9 @@ module.exports = {
 
         let Embed3 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
-        .setDescription(`${sucessemoji} Sold Fresh Nikes For 550 Cash`);
+        .setDescription(`${sucessemoji} Sold Fresh Nikes For ${amount} Cash`);
 
-        db.add(`money_${message.guild.id}_${user.id}`, 550)
+        db.add(`money_${message.guild.id}_${user.id}`, amount)
         message.channel.send({embeds: [Embed3]})
     } else if(args[0] == 'car') {
         let Embed2 = new Discord.MessageEmbed()
@@ -34,7 +34,7 @@ module.exports = {
         .setDescription(`${crossemoji} You don't have a Car to sell`);
 
        let cars = await db.fetch(`car_${message.guild.id}_${user.id}`)
-
+       let amount = Math.floor(Math.random() * 2000)
         if (cars < 1) return message.channel.send({embeds: [Embed2]})
        
         db.fetch(`car_${message.guild.id}_${user.id}`)
@@ -42,9 +42,9 @@ module.exports = {
 
         let Embed3 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
-        .setDescription(`${sucessemoji} Sold a Car For 750 Cash`);
+        .setDescription(`${sucessemoji} Sold a Car For ${amount} Cash`);
 
-        db.add(`money_${message.guild.id}_${user.id}`, 750)
+        db.add(`money_${message.guild.id}_${user.id}`, amount)
         message.channel.send({embeds: [Embed3]})
     } else if(args[0] == 'mansion') {
         let Embed2 = new Discord.MessageEmbed()
@@ -52,7 +52,7 @@ module.exports = {
         .setDescription(`${crossemoji} You don't have a Mansion to sell`);
 
         let houses = await db.fetch(`house_${message.guild.id}_${user.id}`)
-
+        let amount = Math.floor(Math.random() * 3000)
         if (houses < 1) return message.channel.send({embeds: [Embed2]})
        
         db.fetch(`house_${message.guild.id}_${user.id}`)
@@ -60,9 +60,9 @@ module.exports = {
 
         let Embed3 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
-        .setDescription(`${sucessemoji} Sold a Mansion For 1100 Cash`);
+        .setDescription(`${sucessemoji} Sold a Mansion For ${amount} Cash`);
 
-        db.add(`money_${message.guild.id}_${user.id}`, 1100)
+        db.add(`money_${message.guild.id}_${user.id}`, amount)
         message.channel.send({embeds: [Embed3]})
     }
   },

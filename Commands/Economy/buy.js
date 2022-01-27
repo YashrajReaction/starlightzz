@@ -30,7 +30,7 @@ module.exports = {
         .setDescription(`${crossemoji} You need 4000 Cash to purchase Great VIP`);
       if (author < 4000) return message.channel.send({embeds: [Embed22]})
         db.fetch(`great_${message.guild.id}_${user.id}`)
-        db.add(`great_${message.guild.id}_${user.id}`, true)
+        db.set(`great_${message.guild.id}_${user.id}`, true)
         let Embed33 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased Great VIP for 4000 Cash`);
@@ -44,7 +44,7 @@ module.exports = {
         .setDescription(`${crossemoji} You need 8000 Cash to purchase Expert VIP`);
       if (author < 8000) return message.channel.send({embeds: [Embed23]})
         db.fetch(`expert_${message.guild.id}_${user.id}`)
-        db.add(`expert_${message.guild.id}_${user.id}`, true)
+        db.set(`expert_${message.guild.id}_${user.id}`, true)
         let Embed34 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased Expert VIP For 8000 Cash`);
@@ -57,7 +57,7 @@ module.exports = {
         .setDescription(`${crossemoji} You need 16000 Cash to purchase Veteran VIP`);
       if (author < 16000) return message.channel.send({embeds: [Embed24]})
         db.fetch(`veteran_${message.guild.id}_${user.id}`)
-        db.add(`veteran_${message.guild.id}_${user.id}`, true)
+        db.set(`veteran_${message.guild.id}_${user.id}`, true)
         let Embed35 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased Veteran VIP For 16000 Cash`);
@@ -70,7 +70,7 @@ module.exports = {
         .setDescription(`${crossemoji} You need 32000 Cash to purchase Ultra VIP`);
       if (author < 32000) return message.channel.send({embeds: [Embed25]})
         db.fetch(`ultra_${message.guild.id}_${user.id}`)
-        db.add(`ultra_${message.guild.id}_${user.id}`, true)
+        db.set(`ultra_${message.guild.id}_${user.id}`, true)
         let Embed36 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased Ultra VIP For 32000 Cash`);
@@ -85,7 +85,7 @@ module.exports = {
         .setDescription(`${crossemoji} You need 10000 Cash to purchase <@&934115776980459640>`);
       if (author < 10000) return message.channel.send({embeds: [Embed222]})
         db.fetch(`newbie_${message.guild.id}_${user.id}`)
-        db.add(`newbie_${message.guild.id}_${user.id}`, true)
+        db.set(`newbie_${message.guild.id}_${user.id}`, true)
         let Embed333 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased <@&934115776980459640> For 10000 Cash`);
@@ -101,7 +101,7 @@ members.roles.add(role)
         .setDescription(`${crossemoji} You need 15000 Cash to purchase <@&934116157248655400>`);
       if (author < 15000) return message.channel.send({embeds: [Embed221]})
         db.fetch(`pro_${message.guild.id}_${user.id}`)
-        db.add(`pro_${message.guild.id}_${user.id}`, true)
+        db.set(`pro_${message.guild.id}_${user.id}`, true)
         let Embed331 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased <@&934116157248655400> For 15000 Cash`);
@@ -117,7 +117,7 @@ members.roles.add(role)
         .setDescription(`${crossemoji} You need 20000 Cash to purchase <@&934116330758635551>`);
       if (author < 20000) return message.channel.send({embeds: [Embed223]})
         db.fetch(`master_${message.guild.id}_${user.id}`)
-        db.add(`master_${message.guild.id}_${user.id}`, true)
+        db.set(`master_${message.guild.id}_${user.id}`, true)
         let Embed334 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased <@&934116330758635551> For 20000 Cash`);
@@ -133,7 +133,7 @@ members.roles.add(role)
         .setDescription(`${crossemoji} You need 35000 Cash to purchase <@&934116336383180810>`);
       if (author < 35000) return message.channel.send({embeds: [Embed2245]})
         db.fetch(`champion_${message.guild.id}_${user.id}`)
-        db.add(`champion_${message.guild.id}_${user.id}`, true)
+        db.set(`champion_${message.guild.id}_${user.id}`, true)
         let Embed336 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased <@&934116336383180810> For 35000 Cash`);
@@ -149,7 +149,7 @@ members.roles.add(role)
         .setDescription(`${crossemoji} You need 50000 Cash to purchase <@&934116566264610836>`);
       if (author < 50000) return message.channel.send({embeds: [Embed2303]})
         db.fetch(`legend_${message.guild.id}_${user.id}`)
-        db.add(`legend_${message.guild.id}_${user.id}`, true)
+        db.set(`legend_${message.guild.id}_${user.id}`, true)
         let Embed3033 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
         .setDescription(`${sucessemoji} Purchased <@&934116566264610836> For 50000 Cash`);
@@ -174,6 +174,45 @@ members.roles.add(role)
         message.channel.send({embeds: [Embed3]})
       
       
+        } else if(args[0] == 'fishingrod') {
+        let Embed100002 = new Discord.MessageEmbed()
+        .setColor("#FFFFFF")
+        .setDescription(`${crossemoji} You need 5000 Cash to purchase a fishingrod`);
+
+        if (author < 5000) return message.channel.send({embeds: [Embed100002]})
+       
+        db.fetch(`fishingrod_${message.guild.id}_${user.id}`)
+        db.add(`fishingrod_${message.guild.id}_${user.id}`, 1)
+
+        let Embed0913 = new Discord.MessageEmbed()
+        .setColor("#FFFFFF")
+        .setDescription(`${sucessemoji} Purchased a Fishingrod For 5000 Coins`);
+
+        db.subtract(`money_${message.guild.id}_${user.id}`, 5000)
+        message.channel.send({embeds: [Embed0913]})            
+                
+                
+            } else if(args[0] == 'huntingrifle') {
+        let Embed1100002 = new Discord.MessageEmbed()
+        .setColor("#FFFFFF")
+        .setDescription(`${crossemoji} You need 5000 Cash to purchase a huntingrifle`);
+
+        if (author < 5000) return message.channel.send({embeds: [Embed1100002]})
+       
+        db.fetch(`huntingrifle_${message.guild.id}_${user.id}`)
+        db.add(`huntingrifle_${message.guild.id}_${user.id}`, 1)
+
+        let Embed09103 = new Discord.MessageEmbed()
+        .setColor("#FFFFFF")
+        .setDescription(`${sucessemoji} Purchased a Hunting-Rifle For 5000 Coins`);
+
+        db.subtract(`money_${message.guild.id}_${user.id}`, 5000)
+        message.channel.send({embeds: [Embed09103]})      
+          
+          
+          
+          
+                
     } else if(args[0] == 'car') {
         let Embed2 = new Discord.MessageEmbed()
         .setColor("#FFFFFF")
