@@ -12,6 +12,7 @@ module.exports = {
       .setImage("https://i.imgur.com/x5qID97.gif")
       .setDescription("You can send s!help [command name] to get info on a specific command!")
       .addField("<a:li:932354429527687188> Important Links:", "`annie`, `panda`, `facebook`, `instagram`")
+      .addField("<a:Valorant:934441669535891506> Valorants Info:", "`agents`, `maps`")
       .addField("<a:se:932331677747937282> Settings Commands:", "`autorole`, `joinchannel`, `leavechannel`, `joinmessage`, `leavemessage`, `prefix`, `antilink`, `joinmessagevariables`")
       .addField("<a:fu:932335906583613531> Fun Commands:", "`8ball`, `ascii`, `cowsay`, `clyde`, `gif`, `emojify`, `fliptext`, `greentext`, `orangetext`, `hack`, `hug`, `joke`, `kill`, `kiss`, `slap`, `pokeimg`, `respect`, `reverse`, `roast`, `meme`, `nitro`, `vaportext`, `urban`")
       .addField("<a:ec:932741900623040522> Economy Commands:", "`work`, `beg`, `rob`, `pay`, `balance`, `profile`, `withdraw`, `deposit`, `daily`, `weekly`, `hourly`, `monthly`, `store`, `buy`, `sell`, `roulette`, `slots`, `storeinfo [item]`")

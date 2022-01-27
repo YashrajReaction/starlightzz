@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
     name: "doodlecrew",
@@ -15,8 +15,13 @@ module.exports = {
             .setDescription(`[Click Here](${invite.code}) to play Doodle Crew.io!\n\`\`\`\nNote: This feature is not availble for mobile users!\`\`\``)
             .setColor("GREEN")
             .setFooter(`Requested By: ${message.author.tag}`)
-            
-            return message.channel.send({ embeds: [embed] });
+            const row = new MessageActionRow()
+			.addComponents(
+        new MessageButton()
+    .setLabel("DoodleCrew")
+    .setStyle("LINK")
+    .setURL(`${invite.code}`))
+            return message.channel.send({ embeds: [embed], components: [row] });
         });
     }
 }

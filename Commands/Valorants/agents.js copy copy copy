@@ -1,9 +1,0 @@
-const { MessageEmbed } = require('discord.js')
-
-module.exports = {
-    name: "",
-    description: "Get some information about Valorant",
-    run: async(client, message, args) => {
-
-    }
-}

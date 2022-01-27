@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js')
 const { pagination } = require("reconlx")
 module.exports = {
     name: "agents",
+    aliases: ["valorantagents", "agent"],
     description: "Get some information about Valorant",
     run: async(client, message, args) => {
       

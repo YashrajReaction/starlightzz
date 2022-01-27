@@ -11,7 +11,7 @@ module.exports = {
     let user = message.author;
 
     let timeout = 45000;
-    let amount = Math.floor(Math.random() * 100) + 20;
+    let amount = Math.floor(Math.random() * 60)
 
     let beg = await db.fetch(`beg_${message.guild.id}_${user.id}`);
 
@@ -19,12 +19,15 @@ module.exports = {
     let time = ms(timeout - (Date.now() - beg));
   let timeEmbed = new Discord.MessageEmbed()
     .setColor("#FFFFFF")
-    .setDescription(`${timeemoji} You've already begged recently\n\nBeg again in ${time.minutes}m ${time.seconds}s `);
+    .setDescription(`${timeemoji} You've already begged recently\nBeg again in ${time.seconds}s `);
     message.channel.send({embeds: [timeEmbed]})
   } else {
     let moneyEmbed = new Discord.MessageEmbed()
+  .setAuthor(`${user.username} begged`, `${user.displayAvatarURL()}`)
   .setColor("#FFFFFF")
-  .setDescription(`${sucessemoji} You've begged and received ${amount} Cash`);
+  .setDescription(`${sucessemoji} You've begged and received ${amount} Cash`)
+  .setFooter("imagine begging xd")
+  .setTimestamp()
   message.channel.send({embeds: [moneyEmbed]})
   db.add(`money_${message.guild.id}_${user.id}`, amount)
   db.set(`beg_${message.guild.id}_${user.id}`, Date.now())

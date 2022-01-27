@@ -4,7 +4,8 @@ const { MessageEmbed } = require("discord.js");
 const OWNER_ID = require("../../config.json").OWNER_ID;
 module.exports = {
   name: "eval",
-  description: "Run a whole fuckin' code with this!",
+  owner: true,
+  description: "Run a whole code with this!",
   botPerms: ["EMBED_LINKS"],
   run: async (client, message, args) => {
     //Eval Command(Not to be made public btw!)

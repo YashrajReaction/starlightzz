@@ -11,7 +11,7 @@ module.exports = {
     
     let user = message.author;
   let timeout = 604800000;
-  let amount = Math.floor(Math.random() * 3000) + 100;
+  let amount = Math.floor(Math.random() * 5000)
 
   let weekly = await db.fetch(`weekly_${message.guild.id}_${user.id}`);
 
@@ -25,6 +25,8 @@ module.exports = {
   } else {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("#FFFFFF")
+    .setAuthor(`${user.username}'s Weekly `, `${user.displayAvatarURL()}`)
+.setTimestamp()
   .setDescription(`${sucessemoji} You've collected your weekly reward of ${amount} Cash`);
   message.channel.send({embeds: [moneyEmbed]})
   db.add(`money_${message.guild.id}_${user.id}`, amount)
