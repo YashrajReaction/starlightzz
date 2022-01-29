@@ -1,7 +1,7 @@
 const Discord = module.require("discord.js");
 const db = require("quick.db");
 const { sucessemoji, crossemoji, total } = require("./../../emojis.json")
-const slotItems = ["<:Grape:618765748940177421>", "<:Watermelon:618765904318038027>", "<:Orange:618765805596835880>", "<:Apple:618765871862513695>", "<:7_:618765717499805706>", "<:Strawberry:618765828929617930>", "<:Cherry:618765778094784513>"];
+const slotItems = [":grapes:", ":watermelon:", "🍊", ":apple:", ":slot_machine:", ":strawberry:", ":cherries:"];
 
 module.exports = {
   name: "slots",
