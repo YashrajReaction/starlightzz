@@ -74,7 +74,7 @@ module.exports = {
       .addField("<a:mo:932344516860600353> Moderation Commands:", "`kick`, `ban`, `softban`, `mute`, `unmute`, `tempmute`, `emojiid`, `userinfo`, `userid`, `serverinfo`, `announce`, `clear`, `createrole`, `delrole`, `newtext`, `newvoice`, `delchannel`, `enlargeemoji`, `say`, `giverole`, `removerole`, `lock`, `unlock`, `servericon`, `suggestion`, `dm`, `nuke`")
       .addField("<a:mu:932347079634878555> Music Commands:", "`clearqueue`, `filter`, `filter list`, `info`, `jump`, `loop`, `lyrics`, `move`, `mute`, `pause`, `play`, `previoustrack`, `queue`, `remove`, `resume`, `unmute`, `volume`, `youtube`\n`➜Note: Music commands work only with slash commands!`")
       .addField("<a:in:932349713766826084> Info Commands:", "`avatar`, `animesearch`, `calculator`, `imdb`, `google`, `wiki`, `translate`, `weather`, `help`, `ping`, `botinfo`, `report`, `suggest`")
-      .addField("<:ac:932333902754906183> Activities Commands:", "`awkword`, `betrayal`, `chess`, `doodlecrew`, `fishington`, `lettertile`, `poker`, `spellcast`, `youtube`\n`➜Note: Discord Activities commands only work on pc/computers!`")
+      .addField("<:ac:932333902754906183> Activities Commands:", "`awkword`, `betrayal`, `chess`, `checkers`, `wordsnack`, `puttparty`, `doodlecrew`, `fishington`, `lettertile`, `poker`, `spellcast`, `youtube`\n`➜Note: Discord Activities commands only work on pc/computers!`")
 
             .setFooter(
                     `Requested by ${message.author.tag}`,
