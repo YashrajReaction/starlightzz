@@ -23,7 +23,7 @@ module.exports = {
       })
       .setColor("RANDOM")
       //.setFooter(`Announcement by ${message.author.username}`);
-    anchannel.send({ embeds: [embed] }, "ping");
+    anchannel.send("ping", { embeds: [embed] });
 
     let anembed = new Discord.MessageEmbed()
       .setTitle("Done!")
