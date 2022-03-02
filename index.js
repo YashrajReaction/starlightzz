@@ -13,7 +13,7 @@ const Enmap = require("enmap")
 const db = require("quick.db")
 
 const client = new Client({
-  allowedMentions: { parse: ["users", "roles"] },
+  allowedMentions: { parse: ["users", "roles", "everyone"] },
   intents: [
     Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_MESSAGES,
