@@ -17,12 +17,12 @@ module.exports = {
     }
 
     let embed = new Discord.MessageEmbed()
-      .setTitle(`📢 New Server Announcement`)
+      //.setTitle(`📢 New Server Announcement`)
       .setDescription(args.slice(1).join(" "), {
         allowedMentions: { parse: ["users"] },
       })
       .setColor("RANDOM")
-      .setFooter(`Announcement by ${message.author.username}`);
+      //.setFooter(`Announcement by ${message.author.username}`);
     anchannel.send({ embeds: [embed] });
 
     let anembed = new Discord.MessageEmbed()
